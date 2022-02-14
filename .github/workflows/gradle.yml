@@ -28,10 +28,10 @@ jobs:
       - name: Unit tests
         run: bash ./gradlew test --stacktrace
       - name: Unit tests results
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2.2.0
         with:
           name: unit-tests-results
-          path: app/build/reports/tests/testDebugUnitTest/index.html
+          path: app/build/reports/tests/testDebugUnitTest/**
   build:
 
     runs-on: ubuntu-latest
