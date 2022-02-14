@@ -33,4 +33,8 @@ public class AtomText extends SyndElement {
     public void setContent(String content) {
         this.content = content;
     }
+    
+    public void helloWorld() {
+        System.out.print("Hello World !");
+    }
 }
